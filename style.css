@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    gap: 1px 0px ;
+    grid-template-areas:
+      "header1 header1 header2 header2 header2 header3 header3"
+      "icon icon middle middle middle free free";
+  } 
+  .header1 { 
+      grid-area: header1; 
+      background-color: #e4ebeb;
+      height: 15vh;
+    }
+    .header1 p{
+        font-weight:bold; 
+        font-style: italic;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        float: left;
+        display: flex;
+        justify-content:center;
+        position: relative;
+        left:3vh;      
+    }
+  .header2 { 
+      grid-area: header2;
+      background-color: #e4ebeb;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+     }
+     form.search input[type=text] {
+        width: 40vh;
+        height: 2vw;
+        font-size: 1rem;
+        border: 0.2vh solid grey;
+        float: left;
+        background: white;     
+      }
+  .header3 {
+       grid-area: header3;
+       background-color: #e4ebeb;
+       display: flex;
+       justify-content:space-around;
+       align-items:center;     
+     }
+     .last img{
+        float: left;
+        width: 4vw;
+        border-radius: 100%;
+      }
+      .last p{
+        font-size: 1.5em;
+        color: black; 
+      }
+  .icon { 
+      position: relative;
+      grid-area: icon; 
+      background-color: #f1ecef;
+      height: 85vh;
+      display:flex;
+      justify-content:center;
+    align-items:center; 
+    }
+    .icon img{
+        border-radius: 130px;
+        position: relative;
+        border:1px solid rgb(235, 223,232);
+        width:260px;
+        height: 330px;
+    }
+  .middle { 
+      grid-area: middle;
+      background-color: #f1ecef;
+     }
+     h1{
+        float: left;
+        position: relative;
+        top:16vh;
+        font-size: 2.5rem;
+    }
+    .button {
+       background-color: #efefef; 
+       border:none;
+       color:black;
+       padding: 1vh 2vw;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 0.7rem;
+       margin: 2vw 1vh;
+       transition-duration: 0.4s;
+       cursor: pointer;
+     }
+     .button1 {
+       background-color: #efefef; 
+       color: black; 
+       border: 0.1vh solid #101110;
+       position: relative;
+       top:19vh;
+       left: 1vw;
+     }
+     
+     .button1:hover {
+       background-color: #e7e7e7;
+     }
+     .middle p{
+        float: left;
+        position: relative;
+        font-size: 1rem;
+        top:22vh;
+        right: 17.4vw;
+     }
+     h2{
+        float: left;
+        position: relative;
+        font-size: 1rem;
+        top:21vh;
+     }
+     h4{
+         color: blue;
+        float: left;
+        position: relative;
+        font-size: 0.8rem;
+        top:26vh;
+        right: 6.7vw;
+     }
+  .free { 
+      grid-area: free; 
+      background-color: #f1ecef;
+    }
+  
